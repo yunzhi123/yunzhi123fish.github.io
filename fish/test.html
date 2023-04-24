@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+
+    <nav>
+        <div class="left-links">
+            <a href="https://about.google/?fg=1&utm_source=google-&utm_medium=referral&utm_campaign=hp-header">關於 Google</a>
+            <a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=zh-TW">Google 商店</a>
+        </div>
+        <div class="right-links">
+            <a href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a>
+            <a href="https://www.google.com.tw/imghp?hl=zh-TW&authuser=0&ogbl">圖片</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1 href="https://www.google.com/">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo" />
+    </h1>
+    <form>
+
+            <input type="text" placeholder="搜尋Google 或輸入網址" id="search-box">
+
+        <div class="buttons">
+            <button>Google 搜尋</button>
+            <button>好手氣</button>
+        </div>
+    </form>
+    <script>
+        const searchBox = document.getElementById("search-box");
+        searchBox.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                alert("你被我盜了，準備一百萬打我卡裡");
+            }
+        });
+    </script>
+    <p class="links">
+        <a href="#">Google 提供的服務：English</a>
+        <a href="#">廣告</a>
+        <a href="#">商業</a>
+        <a href="#">關於</a>
+    </p>
+</main>
+<footer>
+    <p>台灣 - <a href="#">隱私權</a> - <a href="#">條款</a> - <a href="#">設定</a></p>
+</footer>
+</body>
+</html>
